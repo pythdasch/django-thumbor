@@ -106,6 +106,11 @@ Here are the default settings that you can override:
     # This must be a resolvable address to allow thumbor to reach the images
     THUMBOR_MEDIA_URL = 'http://localhost:8000/media'
 
+    # The prefix for the host serving the original images
+    # This must be a resolvable address to allow thumbor to reach the images
+    # To set only if you want to serve static images through thumbor on production
+    THUMBOR_STATIC_URL = 'http://localhost:8000/static'
+
     # The same security key used in the thumbor service to
     # match the URL construction
     THUMBOR_SECURITY_KEY = 'MY_SECURE_KEY'
